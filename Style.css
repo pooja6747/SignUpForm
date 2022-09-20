@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  font-size: 14px;
+  background: lightgrey;
+}
+
+.container {
+  background: white;
+  width: 500px;
+  padding: 25px;
+  margin: 50px auto 0;
+  border-top: 5px solid black;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container h2 {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 30px;
+  text-align: center;
+}
+
+.input-field {
+  width: 90%;
+  /* position: relative; */
+  margin: 20px auto;
+}
+
+.name {
+  width: 45%;
+  padding: 8px 0 8px 40px;
+}
+
+.input-field span {
+  margin-left: 35px;
+}
+
+.lock {
+  padding: 8px 11px;
+}
+
+.email {
+  padding: 8px;
+}
+
+.text-name {
+  width: 100%;
+  padding: 8px 0 8px 40px;
+}
+
+.input-field i {
+  position: fixed;
+  font-size: 18px;
+  color: black;
+  border-right: 1px solid #cccccc;
+}
+
+.name {
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+.text-name {
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+.text-name:hover {
+  background-color: lightgrey;
+}
+
+.radio-button {
+  margin-right: 4px;
+}
+
+.country {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  padding: 0px 15px;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  color: #7b7b7b;
+  background: white;
+}
+
+.check {
+  position: relative;
+  margin-right: 25px;
+}
+
+.checkbox {
+  margin-right: 15px;
+  /* height: 20px; */
+  /* position: absolute;*/
+}
+
+.button {
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.label {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.fa-mars:before {
+  content: "\f222";
+  padding: 15px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .name {
+    width: 100%;
+    padding: 8px 0 8px;
+  }
+
+  .input-field span {
+    padding: 10px;
+
+    margin: 0;
+  }
+
+  .input-field i {
+    position: fixed;
+    font-size: 18px;
+    color: black;
+    border-right: 1px solid #cccccc;
+  }
+}
