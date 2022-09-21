@@ -37,9 +37,9 @@ body {
   padding: 8px 0 8px 40px;
 }
 
-.input-field span {
+/* .input-field span {
   margin-left: 35px;
-}
+} */
 
 .lock {
   padding: 8px 11px;
@@ -121,6 +121,43 @@ body {
 .fa-mars:before {
   content: "\f222";
   padding: 15px;
+}
+
+.input-field span {
+  color: red;
+  bottom: 17px;
+  right: 12px;
+  font-size: 14px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.popup {
+  width: 400px;
+  background-image: url("Background.jpg");
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  padding: 50px;
+  visibility: hidden;
+
+  justify-content: center;
+
+  align-items: center;
+
+  opacity: 0;
+
+  transition: 0.3s max-height 0.8s, 0.3s opacity 0.6s;
+}
+
+.open-popup {
+  opacity: 1;
+
+  visibility: visible;
 }
 
 @media (max-width: 480px) {

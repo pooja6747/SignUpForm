@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+  <table style="width:100%">
+    <tr>
+        <th>Email</th>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    <tr>
+        <td id="demo"></td>
+        <td id="fname"></td>
+        <td id="lname"></td>
+    </tr>
+  </table>
+
+
+</div>
+
+
+
+    <script>
+          var email = localStorage.getItem("email");
+  var fname = localStorage.getItem("fname");
+  var lname = localStorage.getItem("lname");
+  var pw = localStorage.getItem("pw");
+ 
+  document.getElementById("demo").innerHTML = localStorage.getItem("email");
+  document.getElementById("fname").innerHTML = localStorage.getItem("fname");
+  document.getElementById("lname").innerHTML = localStorage.getItem("lname");
+
+         console.log(fname);
+         console.log(lname);
+         console.log(pw);
+     console.log(email);
+    </script>
+</body>
+</html>
