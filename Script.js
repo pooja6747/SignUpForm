@@ -24,7 +24,7 @@ localStorage.setItem("lname", lname);
 localStorage.setItem("pw", pw);
 
 
-  if (fname.length == 0 || fname.length == "") {
+  if (fname.length < 0 || fname.length == "") {
     fnameError.innerHTML = "**Please enter name atleast 2 character";
   }
 
@@ -32,15 +32,16 @@ localStorage.setItem("pw", pw);
     lnameError.innerHTML = "**Please enter name atleast 2 character";
   }
 
+
   if (email.length == "") {
     emailError.innerHTML = "**Email is required";
-    return false;
+   //  return false;
   }
 
-  if (!email.match(/[@]/)) {
-    emailError.innerHTML = "**Email invalid";
-    return false;
-  }
+//   if (!email.match( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+//     emailError.innerHTML = "**Email @ sign use";
+//     return false;
+//   }
 
   ///for password
 
@@ -48,21 +49,29 @@ localStorage.setItem("pw", pw);
 //   if(pw.match((/?=.*[a-z])(?=.*[A-Z]).{8,}/))){
 // passwordError.innerHTML = "**Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
 //   }
-  if (pw.length == 0 || pw.length == "") {
-    passwordError.innerHTML = "**Fill the password please!";
-    return false;
-  }
+console.log(pw);
+if (pw.length == "") {
+   console.log("pw validation");
+   passwordError.innerHTML = "**Fill the password please!";
+  
+ }
+
+  if(pw.length <6){
+   passwordError.innerHTML = "**Password should be atleast 6 character long";
+ 
+
+}
 
   //check empty password field
   if (cpw.length == "") {
     cpasswordError.innerHTML = "**Fill the password please!";
-    return false;
+   
   }
 
   if (pw != cpw) {
     cpasswordError.innerHTML = "**Password does not match";
-  } else {
-  }
+    return false;
+  } 
 
   
  
